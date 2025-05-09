@@ -17,17 +17,19 @@
 	<default>
 		<!--making every geom collidable. expect those that dont are default-->
 		<geom contype="1" conaffinity="1"/>
-	</default>
 	
-	<default class="acker_solver_param">
-		<!--solver impedance and reference(?) for ackerman equality constraint-->
-		<!--default solimp: "0.900 0.950 0.001"-->
-		<!--default solref: "0.020 1.000"-->
-		<!--solref: (timeconst, dampratio)
-			b = 2 / (dmax * timeconst)
-			k = d(r) / (dmax * dmax * timeconst * timeconst * dampratio * dampratio)
-		-->
-		<equality solimp="0.9950 0.9990 0.0001" solref="0.0100 0.7500"/>
+	
+		<default class="acker_solver_param">
+			<!--solver impedance and reference(?) for ackerman equality constraint-->
+			<!--default solimp: "0.900 0.950 0.001"-->
+			<!--default solref: "0.020 1.000"-->
+			<!--solref: (timeconst, dampratio)
+				b = 2 / (dmax * timeconst)
+				k = d(r) / (dmax * dmax * timeconst * timeconst * dampratio * dampratio)
+			-->
+			<equality solimp="0.9950 0.9990 0.0001" solref="0.0100 0.7500"/>
+		</default>
+
 	</default>
 	
 	<visual>
